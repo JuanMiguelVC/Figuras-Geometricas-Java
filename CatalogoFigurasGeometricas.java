@@ -14,7 +14,7 @@ class CatalogoFigurasGeometricas{
                 double base = sc.nextDouble();
                 System.out.println("Introduce la altura del triangulo:");
                 double altura = sc.nextDouble();
-                Triangulo triangulo = new Triangulo(base, altura);
+                FGTriangulo triangulo = new FGTriangulo(base, altura);
                 System.out.println("El area del triangulo es: " + triangulo.calcularArea());
                 System.out.println("El perimetro del triangulo es: " + triangulo.calcularPerimetro());
                 triangulo.dibujar();

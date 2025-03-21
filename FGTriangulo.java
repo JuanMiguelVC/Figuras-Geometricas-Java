@@ -1,9 +1,9 @@
-public class Triangulo extends FiguraGeometrica implements FiguraGeometricaDibujable {
+public class FGTriangulo extends FiguraGeometrica implements FiguraGeometricaDibujable {
 
     private double base;
     private double altura;
 
-    public Triangulo(double base, double altura) {
+    public FGTriangulo(double base, double altura) {
         this.base = base;
         this.altura = altura;
     }
