@@ -1,11 +1,10 @@
-public class TrianguloEscaleno extends FGTriangulo {
+public abstract class TrianguloEscaleno extends FiguraGeometrica {
 
     private double lado1;
     private double lado2;
     private double lado3;
 
     public TrianguloEscaleno(double lado1, double lado2, double lado3) {
-        super(0, 0); // Call the superclass constructor with 0, 0
         this.lado1 = lado1; // Store the first side in this class
         this.lado2 = lado2; // Store the second side in this class
         this.lado3 = lado3; // Store the third side in this class
@@ -35,9 +34,15 @@ public class TrianguloEscaleno extends FGTriangulo {
         this.lado3 = lado3;
     }
 
-    public double area() {
-        double p = (getLado1() + getLado2() + lado3) / 2;
-        return Math.sqrt(p * (p - getLado1()) * (p - getLado2()) * (p - lado3));
+    @Override
+    public double calcularArea() {
+        double s = (lado1 + lado2 + lado3) / 2;
+        return Math.sqrt(s * (s - lado1) * (s - lado2) * (s - lado3));
+    }
+
+    @Override
+    public double calcularPerimetro() {
+        return lado1 + lado2 + lado3;
     }
 
 }

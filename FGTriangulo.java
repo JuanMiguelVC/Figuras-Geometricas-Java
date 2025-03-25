@@ -1,4 +1,4 @@
-public class FGTriangulo {
+public class FGTriangulo extends FiguraGeometrica implements FiguraGeometricaDibujable {
     private double base;
     private double altura;
 
@@ -21,5 +21,20 @@ public class FGTriangulo {
 
     public void setAltura(double altura) {
         this.altura = altura;
+    }
+
+    @Override
+    public double calcularArea() {
+        return (base * altura) / 2;
+    }
+
+    @Override
+    public double calcularPerimetro() {
+        return 0;
+    }
+
+    @Override
+    public void dibujar() {
+        System.out.println("Dibujando un triangulo de base " + base + " y altura " + altura);
     }
 }
