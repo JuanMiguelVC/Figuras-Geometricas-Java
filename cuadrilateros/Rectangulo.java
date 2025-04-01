@@ -1,4 +1,4 @@
-public class Rectangulo extends FiguraGeometrica implements FiguraGeometricaDibujable {
+public class Rectangulo extends FiguraGeometricaCuadrilatero {
 
     private double base;
     private double altura;
@@ -33,10 +33,4 @@ public class Rectangulo extends FiguraGeometrica implements FiguraGeometricaDibu
     public double calcularPerimetro() {
         return 2 * (base + altura);
     }
-
-    @Override
-    public void dibujar() {
-        System.out.println("Dibujando un rectángulo de base " + base + " y altura " + altura);
-    }
-
 }

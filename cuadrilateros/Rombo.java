@@ -1,34 +1,30 @@
-public abstract class Rombo extends FiguraGeometrica implements FiguraGeometricaDibujable{
+public abstract class Rombo extends FiguraGeometricaCuadrilatero {
+
     private double diagonalMayor;
     private double diagonalMenor;
-    
-    public Rombo(double diagonalMayor, double diagonalMenor){
+
+    public Rombo(double diagonalMayor, double diagonalMenor) {
         this.diagonalMayor = diagonalMayor;
         this.diagonalMenor = diagonalMenor;
     }
-    
-    public double getDiagonalMayor(){
+
+    public double getDiagonalMayor() {
         return diagonalMayor;
     }
-    
-    public void setDiagonalMayor(double diagonalMayor){
+
+    public void setDiagonalMayor(double diagonalMayor) {
         this.diagonalMayor = diagonalMayor;
     }
-    
-    public double getDiagonalMenor(){
+
+    public double getDiagonalMenor() {
         return diagonalMenor;
     }
-    
-    public void setDiagonalMenor(double diagonalMenor){
+
+    public void setDiagonalMenor(double diagonalMenor) {
         this.diagonalMenor = diagonalMenor;
     }
-    
-    public double area(){
+
+    public double area() {
         return (diagonalMayor * diagonalMenor) / 2;
-    }
-    
-    @Override
-    public void dibujar(){
-        System.out.println("Dibujando un rombo de diagonales " + getDiagonalMayor() + " y " + getDiagonalMenor());
     }
 }
