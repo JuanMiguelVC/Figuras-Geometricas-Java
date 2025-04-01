@@ -1,4 +1,4 @@
-public class Decagono extends FiguraGeometrica {
+public class Decagono extends FiguraGeometricaRegular {
     private double lado;
     private double apotema;
 

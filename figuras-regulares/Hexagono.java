@@ -1,4 +1,4 @@
-public class Hexagono extends FiguraGeometrica {
+public class Hexagono extends FiguraGeometricaRegular {
     private double lado;
 
     public Hexagono(double lado) {

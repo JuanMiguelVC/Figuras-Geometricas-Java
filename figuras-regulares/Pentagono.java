@@ -1,4 +1,4 @@
-public abstract class Pentagono extends FiguraGeometrica {
+public abstract class Pentagono extends FiguraGeometricaRegular {
     private double lado;
     private double apotema;
 

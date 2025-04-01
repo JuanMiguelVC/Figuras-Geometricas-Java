@@ -1,4 +1,4 @@
-public class Nonagono extends FiguraGeometrica {
+public class Nonagono extends FiguraGeometricaRegular {
     private double lado;
 
     public Nonagono(double lado) {
