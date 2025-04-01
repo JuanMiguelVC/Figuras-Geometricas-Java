@@ -1,4 +1,4 @@
-public class Circulo extends FiguraGeometrica implements FiguraGeometricaDibujable {
+public class Circulo extends FiguraGeometricaCurva {
 
     private double radio;
 
@@ -22,11 +22,6 @@ public class Circulo extends FiguraGeometrica implements FiguraGeometricaDibujab
     @Override
     public double calcularPerimetro() {
         return 2 * Math.PI * radio;
-    }
-
-    @Override
-    public void dibujar() {
-        System.out.println("Dibujando un círculo de radio " + radio);
     }
 
 }

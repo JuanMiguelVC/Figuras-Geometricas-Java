@@ -1,4 +1,4 @@
-public abstract class Elipse extends FiguraGeometrica implements FiguraGeometricaDibujable{
+public abstract class Elipse extends FiguraGeometricaCurva{
     private double semiejeMayor;
     private double semiejeMenor;
 
@@ -32,9 +32,5 @@ public abstract class Elipse extends FiguraGeometrica implements FiguraGeometric
     public double calcularPerimetro() {
         return 2 * Math.PI * Math.sqrt((Math.pow(semiejeMayor, 2) + Math.pow(semiejeMenor, 2)) / 2);
     }
-
-    @Override
-    public void dibujar() {
-        System.out.println("Dibujando una elipse de semieje mayor " + semiejeMayor + " y semieje menor " + semiejeMenor);
-    }
+    
 }
