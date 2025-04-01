@@ -1,4 +1,4 @@
-public abstract class TrianguloEscaleno extends FiguraGeometricaTriangular {
+public class TrianguloEscaleno extends FiguraGeometricaTriangular {
 
     private double lado1;
     private double lado2;

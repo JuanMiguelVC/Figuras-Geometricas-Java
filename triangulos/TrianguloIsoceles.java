@@ -1,4 +1,4 @@
-public abstract class TrianguloIsoceles extends FiguraGeometricaTriangular {
+public class TrianguloIsoceles extends FiguraGeometricaTriangular {
 
     private double base;
     private double lado1;

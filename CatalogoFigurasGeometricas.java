@@ -1,51 +1,48 @@
 import java.util.Scanner;
-class CatalogoFigurasGeometricas{
+
+class CatalogoFigurasGeometricas {
+
     public static void main(String[] args) {
-        System.out.println("Selecciona una figura geomertrica:");
-        System.out.println("1. Triangulo");
-        System.out.println("2. Cuadrado");
-        System.out.println("3. Rectangulo");
-        System.out.println("4. Circulo");
-        Scanner sc = new Scanner(System.in);
-        int opcion = sc.nextInt();
-        switch (opcion) {
-            case 1 -> {
-                System.out.println("Introduce la base del triangulo:");
-                double base = sc.nextDouble();
-                System.out.println("Introduce la altura del triangulo:");
-                double altura = sc.nextDouble();
-                FGTriangulo triangulo = new FGTriangulo(base, altura);
-                System.out.println("El area del triangulo es: " + triangulo.calcularArea());
-                System.out.println("El perimetro del triangulo es: " + triangulo.calcularPerimetro());
-                triangulo.dibujar();
-            }
-            case 2 -> {
-                System.out.println("Introduce el lado del cuadrado:");
-                double lado = sc.nextDouble();
-                Cuadrado cuadrado = new Cuadrado(lado);
-                System.out.println("El area del cuadrado es: " + cuadrado.calcularArea());
-                System.out.println("El perimetro del cuadrado es: " + cuadrado.calcularPerimetro());
-                cuadrado.dibujar();
-            }
-            case 3 -> {
-                System.out.println("Introduce la base del rectangulo:");
-                double base = sc.nextDouble();
-                System.out.println("Introduce la altura del rectangulo:");
-                double altura = sc.nextDouble();
-                Rectangulo rectangulo = new Rectangulo(base, altura);
-                System.out.println("El area del rectangulo es: " + rectangulo.calcularArea());
-                System.out.println("El perimetro del rectangulo es: " + rectangulo.calcularPerimetro());
-                rectangulo.dibujar();
-            }
-            case 4 -> {
-                System.out.println("Introduce el radio del circulo:");
-                double radio = sc.nextDouble();
-                Circulo circulo = new Circulo(radio);
-                System.out.println("El area del circulo es: " + circulo.calcularArea());
-                System.out.println("El perimetro del circulo es: " + circulo.calcularPerimetro());
-                circulo.dibujar();
-            }
-            default -> System.out.println("Opcion no valida");
+        try (Scanner scanner = new Scanner(System.in)) {
+            int opcion;
+
+            do {
+                System.out.println("Seleccione una figura geométrica:");
+                System.out.println("1. Cuadrado");
+                System.out.println("2. Rectángulo");
+                System.out.println("3. Círculo");
+                System.out.println("4. Triangulo");
+                System.out.print("Opción: ");
+                opcion = scanner.nextInt();
+
+                switch (opcion) {
+                    case 1 -> {
+                        System.out.print("Ingrese el lado del cuadrado: ");
+                        double ladoCuadrado = scanner.nextDouble();
+                        Cuadrado cuadrado = new Cuadrado(ladoCuadrado);
+                        System.out.println("Área del cuadrado: " + cuadrado.calcularArea());
+                    }
+                    case 2 -> {
+                        System.out.print("Ingrese la base del rectángulo: ");
+                        double baseRectangulo = scanner.nextDouble();
+                        System.out.print("Ingrese la altura del rectángulo: ");
+                        double alturaRectangulo = scanner.nextDouble();
+                        Rectangulo rectangulo = new Rectangulo(baseRectangulo, alturaRectangulo);
+                        System.out.println("Área del rectángulo: " + rectangulo.calcularArea());
+                    }
+                    case 3 -> {
+                        System.out.print("Ingrese el radio del círculo: ");
+                        double radioCirculo = scanner.nextDouble();
+                        Circulo circulo = new Circulo(radioCirculo);
+                        System.out.println("Área del círculo: " + circulo.calcularArea());
+                    }
+                    case 4 ->
+                        System.out.println("Saliendo...");
+                    default ->
+                        System.out.println("Opción no válida. Intente de nuevo.");
+                }
+            } while (opcion != 4);
         }
+
     }
 }

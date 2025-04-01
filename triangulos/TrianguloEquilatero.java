@@ -1,4 +1,4 @@
-public abstract class TrianguloEquilatero extends FiguraGeometricaTriangular {
+public class TrianguloEquilatero extends FiguraGeometricaTriangular {
 
     private final double lado;
 
