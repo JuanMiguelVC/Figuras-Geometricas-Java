@@ -1,4 +1,4 @@
-public abstract class TrianguloEquilatero extends FiguraGeometrica implements FiguraGeometricaDibujable {
+public abstract class TrianguloEquilatero extends FiguraGeometricaTriangular {
 
     private final double lado;
 
@@ -18,11 +18,6 @@ public abstract class TrianguloEquilatero extends FiguraGeometrica implements Fi
     @Override
     public double calcularPerimetro() {
         return 3 * lado;
-    }
-
-    @Override
-    public void dibujar() {
-        System.out.println("Dibujando un triángulo equilátero de lado " + lado);
     }
 
 }

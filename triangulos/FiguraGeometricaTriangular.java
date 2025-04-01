@@ -1,4 +1,4 @@
-abstract class FiguraGeometrica {
+abstract class FiguraGeometricaTriangular {
 
     public abstract double calcularArea();
 
