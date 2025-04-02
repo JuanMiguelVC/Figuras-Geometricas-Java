@@ -1,7 +1,11 @@
-abstract class FiguraGeometricaRegular {
+class FiguraGeometricaRegular {
 
-    public abstract double calcularArea();
+    public double calcularArea() {
+        return 0.0;
+    }
 
-    public abstract double calcularPerimetro();
+    public double calcularPerimetro() {
+        return 0.0;
+    }
 
 }
