@@ -1,4 +1,4 @@
-public abstract class Elipse extends FiguraGeometricaCurva{
+public class Elipse extends FiguraGeometricaCurva{
     private double semiejeMayor;
     private double semiejeMenor;
 
