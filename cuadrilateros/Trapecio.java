@@ -1,4 +1,4 @@
-public abstract class Trapecio extends FiguraGeometricaCuadrilatero {
+public class Trapecio extends FiguraGeometricaCuadrilatero {
 
     private double baseMayor;
     private double baseMenor;

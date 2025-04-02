@@ -1,6 +1,10 @@
-abstract class FiguraGeometricaCuadrilatero {
+class FiguraGeometricaCuadrilatero {
 
-    public abstract double calcularArea();
+    public double calcularArea() {
+        return 0;
+    }
 
-    public abstract double calcularPerimetro();
+    public double calcularPerimetro() {
+        return 0;
+    }
 }

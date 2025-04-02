@@ -1,4 +1,5 @@
-public abstract class Rombo extends FiguraGeometricaCuadrilatero {
+
+public class Rombo extends FiguraGeometricaCuadrilatero {
 
     private double diagonalMayor;
     private double diagonalMenor;
@@ -24,7 +25,14 @@ public abstract class Rombo extends FiguraGeometricaCuadrilatero {
         this.diagonalMenor = diagonalMenor;
     }
 
-    public double area() {
+    @Override
+    public double calcularArea() {
         return (diagonalMayor * diagonalMenor) / 2;
+    }
+
+    @Override
+    public double calcularPerimetro() {
+        double lado = Math.sqrt(Math.pow(diagonalMayor / 2, 2) + Math.pow(diagonalMenor / 2, 2));
+        return 4 * lado;
     }
 }
