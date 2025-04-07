@@ -41,7 +41,7 @@ class CatalogoFigurasGeometricas3D {
                     System.out.println("El area del tetraedro es: " + tetraedro.calcularArea());
                     System.out.println("El perimetro del tetraedro es: " + tetraedro.calcularPerimetro());
                 }
-                case 4 ->{
+                case 4 -> {
                     System.out.println("Introduce el radio de la esfera:");
                     double radio = sc.nextDouble();
                     Esfera esfera = new Esfera(radio);
@@ -49,7 +49,7 @@ class CatalogoFigurasGeometricas3D {
                     System.out.println("El area de la esfera es: " + esfera.calcularArea());
                     System.out.println("El perimetro de la esfera es: " + esfera.calcularPerimetro());
                 }
-                case 5->{
+                case 5 -> {
                     System.out.println("Introduce el radio del cono:");
                     double radio = sc.nextDouble();
                     System.out.println("Introduce la altura del cono:");
@@ -59,7 +59,7 @@ class CatalogoFigurasGeometricas3D {
                     System.out.println("El area del cono es: " + cono.calcularArea());
                     System.out.println("El perimetro del cono es: " + cono.calcularPerimetro());
                 }
-                case 6->{
+                case 6 -> {
                     System.out.println("Introduce el radio del cilindro:");
                     double radio = sc.nextDouble();
                     System.out.println("Introduce la altura del cilindro:");
@@ -69,7 +69,7 @@ class CatalogoFigurasGeometricas3D {
                     System.out.println("El area del cilindro es: " + cilindro.calcularArea());
                     System.out.println("El perimetro del cilindro es: " + cilindro.calcularPerimetro());
                 }
-                case 7->{
+                case 7 -> {
                     System.out.println("Introduce el area de la base de la piramide:");
                     double areaBase = sc.nextDouble();
                     System.out.println("Introduce la altura de la piramide:");
@@ -83,6 +83,10 @@ class CatalogoFigurasGeometricas3D {
             }
             // Close the scanner to avoid resource leaks
             sc.close();
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+        } finally {
+            System.out.println("Saliendo...");
         }
     }
 }

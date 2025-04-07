@@ -18,7 +18,8 @@ class CatalogoFGTriangulos {
                     double ladoEquilatero = scanner.nextDouble();
                     TrianguloEquilatero trianguloEquilatero = new TrianguloEquilatero(ladoEquilatero);
                     System.out.println("Área del triángulo equilátero: " + trianguloEquilatero.calcularArea());
-                    System.out.println("Perímetro del triángulo equilátero: " + trianguloEquilatero.calcularPerimetro());
+                    System.out
+                            .println("Perímetro del triángulo equilátero: " + trianguloEquilatero.calcularPerimetro());
                 }
                 case 2 -> {
                     System.out.print("Ingrese el lado base del triángulo isósceles: ");
@@ -26,7 +27,8 @@ class CatalogoFGTriangulos {
                     System.out.print("Ingrese el lado igual del triángulo isósceles: ");
                     double ladoIgualIsosceles = scanner.nextDouble();
                     double lado2 = ladoIgualIsosceles; // Assuming the second side is equal to the first side
-                    TrianguloIsoceles trianguloIsosceles = new TrianguloIsoceles(baseIsosceles, ladoIgualIsosceles, lado2);
+                    TrianguloIsoceles trianguloIsosceles = new TrianguloIsoceles(baseIsosceles, ladoIgualIsosceles,
+                            lado2);
                     System.out.println("Área del triángulo isósceles: " + trianguloIsosceles.calcularArea());
                     System.out.println("Perímetro del triángulo isósceles: " + trianguloIsosceles.calcularPerimetro());
                 }
@@ -43,6 +45,10 @@ class CatalogoFGTriangulos {
                 }
                 default -> System.out.println("Opción no válida.");
             }
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+        } finally {
+            System.out.println("Saliendo...");
         }
     }
 }

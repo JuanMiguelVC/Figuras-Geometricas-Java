@@ -63,6 +63,8 @@ public class CatalogoFGCuadrilateros {
                 default ->
                     System.out.println("Opción no válida. Intente de nuevo.");
             }
+        }catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
         }
         System.out.println("Saliendo...");
         System.out.println("Fin del programa.");
