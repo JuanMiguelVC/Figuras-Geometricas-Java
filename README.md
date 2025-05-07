@@ -4,11 +4,11 @@ The repository code is organized into folders based on the type of geometric fig
 There are also Java classes for three-dimensional figures, and each has its own class to calculate the area, perimeter, and volume of each figure.
 
 --- Index of folders and classes ---
-cuadrialeteros -> CatalogoFGCuadrilateros.java
-figuras-curvas -> CatalogoFGCurva.java
-figuras-regulares -> CatalogoFGRegulares.java
-figuras-volumen -> CatalogoFigurasGeometricas3D.java
-triangulos -> CatalogoFGTriangulos.java
+cuadrialeteros -> CatalogoFGCuadrilateros.java <br>
+figuras-curvas -> CatalogoFGCurva.java <br>
+figuras-regulares -> CatalogoFGRegulares.java <br>
+figuras-volumen -> CatalogoFigurasGeometricas3D.java <br>
+triangulos -> CatalogoFGTriangulos.java <br>
 
 ### Español
 Este repositorio es para un trabajo personal en Programación Orientada a Objetos con lenguaje Java. 
@@ -16,8 +16,8 @@ El codigo del repositorio se ha organizado en carpetas segun el tipo de figura g
 Tambien existen clases java con figuras en tres dimensiones y tiene su clase para calcular el area, perimetro y volumen de cada una de las figuras
 
 --- Indice de carpetas y clases ---
-cuadrialeteros -> CatalogoFGCuadrilateros.java
-figuras-curvas -> CatalogoFGCurva.java
-figuras-regulares -> CatalogoFGRegulares.java
-figuras-volumen -> CatalogoFigurasGeometricas3D.java
-triangulos -> CatalogoFGTriangulos.java
+cuadrialeteros -> CatalogoFGCuadrilateros.java <br>
+figuras-curvas -> CatalogoFGCurva.java <br>
+figuras-regulares -> CatalogoFGRegulares.java <br>
+figuras-volumen -> CatalogoFigurasGeometricas3D.java <br>
+triangulos -> CatalogoFGTriangulos.java <br>
